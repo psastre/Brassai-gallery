@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: rebeqa;
+  src: url(../public/Rebeqa-Black.otf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main{
+  width: 300%;
+  height: auto;
+  background-color: aliceblue;
+  overscroll-behavior: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+.section{
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.first{
+  background-color: aliceblue;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.second{
+  background-color: blanchedalmond;
+}
+.third{
+  background-color: rebeccapurple;
+}
+.title{
+  display: flex;
+  margin-bottom: -8.5rem;
+  margin-top: 2rem;
+  
+ 
+}
+p{
+  font-family: rebeqa;
+  font-size: 18rem;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(50px);
+}
+span{
+  font-family: rebeqa;
+  font-size: 18rem;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(50px);
+}
+.images{
+  width: 700px;
+  height: 600px;
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.br1{
+  background-image: url(./images/BR1.jpg);
+  background-size: cover;
+  margin-bottom: 2rem;
+  z-index: 2;
+  
 }

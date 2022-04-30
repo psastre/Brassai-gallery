@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React, { useEffect } from "react"
 import './App.css';
 
+import Animate from "./animations"
+
 function App() {
+  useEffect(()=>{
+    Animate()
+  })
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <div className="section first">
+        <div className="title"><p>Bra</p><span>ss</span><p>i</p></div>
+        
+        <div className="images br1"></div>
+        <img src="./images/BR1.jpg" alt="" />
+        </div>
+        <div className="section second"></div>
+        <div className="section third"></div>
+    </main>
   );
 }
 
