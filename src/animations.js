@@ -29,13 +29,60 @@ export default function Animate(){
         }
     )
     let imgBr2 = document.querySelector(".images br2");
-    gsap.to(imgBr2,{
-      x:-100,
+    gsap.to("h2",{
+      x:0,
+      duration:2,
       scrollTrigger:{
-        trigger:".second",
-        start:"top 20%",
-        scrub:true,
-        end:"top 50%",
+        trigger:"main",
+        start:"top -600px",
+        
+        
+        markers:true,
+      }
+    })
+    let imgAbout = document.querySelector(".img-about");
+    gsap.to(imgAbout,{
+      x:50,
+      duration:2,
+      scrollTrigger:{
+        trigger:"main",
+        start:"top -500px",
+        
+        
+        markers:true,
+      }
+    })
+  
+    let imgGallery1 = document.querySelectorAll(".img-gallery1");
+    gsap.to(imgGallery1,{
+      x:-250,
+      delay: 0.5,
+      duration:1.5,
+      
+      scrollTrigger:{
+        trigger:"main",
+        start:"top -1700px",
+        scrub:3,
+        end:"top -4700px",
+        
+        
+        markers:true,
+      }
+    })
+    let imgGallery2 = document.querySelectorAll(".img-gallery2");
+    gsap.to(imgGallery2,{
+      x:-550,
+      delay: 0.5,
+      duration:1.5,
+      
+      
+      scrollTrigger:{
+        trigger:"main",
+        start:"top -1700px",
+        scrub:3,
+        end:"top -3700px",
+        
+        
         markers:true,
       }
     })
@@ -51,8 +98,8 @@ export default function Animate(){
       scrollTrigger: {
         trigger: "main",
         pin: true,
-        scrub: 1,
-        snap: 1 / (sections.length - 1),
+        scrub: 2,
+        
         // base vertical scrolling on how wide the container is so it feels more natural.
         end: "+=3500",
       }
