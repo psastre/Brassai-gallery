@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor:none;
   }
   
   @font-face {
@@ -16,13 +17,13 @@
   }
 
   .sections{
-      width: 400%;
+      width: 600%;
       height: 100%;
       display: flex;
   }
   .section{
       height: 100%;
-      width: 25%;
+      width: 17%;
       position: relative;
       background-color: aliceblue;
      
@@ -90,11 +91,15 @@
       color: #626262;
       margin-top: 65px;
       margin-bottom: 25px;
+      font-size: 37rem;
       
     }
   }
   .forth{
-   width: 15%;
+   width: 0%;
+  }
+  .fifth{
+   width: 0%;
   }
 
   .title{
@@ -133,7 +138,7 @@
   
 
   .first img{
-    max-width: 30%;
+    max-width: 37%;
     margin-bottom: 2rem;
    
   }
@@ -148,19 +153,24 @@
 
   .zoomImage{
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.85);
-    height: 500px;
-    width: 700px;
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 100vh;
+    width: 100%;
     left: 0; 
     right: 0; 
     top: 0;
     bottom: 0;
-    margin: auto; 
+    
     z-index: 9999;
    
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img{
+      height: auto;
+    width: 30vw;
+    }
     
   }
 
@@ -177,6 +187,15 @@
   .img-gallery2{
     height: auto;
     width: 15vw;
+    margin: 80px;
+    z-index: 999;
+    position: absolute;
+    box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.4);
+  }
+  .img-gallery2-big{
+    
+    height: auto;
+    width: 50vw;
     margin: 80px;
     z-index: 999;
     position: absolute;

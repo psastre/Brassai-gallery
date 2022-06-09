@@ -6,13 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Animate(){
 
-    gsap.to(".images",{
-        opacity: 1,
-        y: 0,
-        delay:0.4,
-        duration: 1.5
-        }
-    )
+  
     gsap.to(".title p",{
         opacity: 1,
         y: 0,
@@ -28,7 +22,7 @@ export default function Animate(){
         duration: 1.3
         }
     )
-    let imgBr2 = document.querySelector(".images br2");
+   
     gsap.to("h2",{
       x:0,
       duration:2,
@@ -37,7 +31,7 @@ export default function Animate(){
         start:"top -600px",
         
         
-        markers:true,
+        
       }
     })
     let imgAbout = document.querySelector(".img-about");
@@ -49,7 +43,7 @@ export default function Animate(){
         start:"top -500px",
         
         
-        markers:true,
+        
       }
     })
   
@@ -66,7 +60,7 @@ export default function Animate(){
         end:"top -4700px",
         
         
-        markers:true,
+        
       }
     })
     let imgGallery2 = document.querySelectorAll(".img-gallery2");
@@ -78,12 +72,12 @@ export default function Animate(){
       
       scrollTrigger:{
         trigger:"main",
-        start:"top -1700px",
+        start:"top -1500px",
         scrub:3,
         end:"top -3700px",
         
         
-        markers:true,
+        
       }
     })
   
